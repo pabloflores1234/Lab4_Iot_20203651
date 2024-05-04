@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab4_Iot_20203651</string>
+    <string name="tele_clima">Tele Clima</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="creado_por_20203651">Creado por: 20203651</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
