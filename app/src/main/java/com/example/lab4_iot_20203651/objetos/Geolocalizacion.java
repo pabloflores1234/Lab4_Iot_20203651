@@ -7,6 +7,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 public class Geolocalizacion implements Serializable{
 
@@ -26,8 +27,8 @@ public class Geolocalizacion implements Serializable{
     private String state;
 
 
-    @SerializedName("datos")
-    private List<Datos> datos;
+    @SerializedName("localNames")
+    private Map<String, String> localNames;
 
     public String getNameCiudad() {
         return nameCiudad;
@@ -69,11 +70,17 @@ public class Geolocalizacion implements Serializable{
         this.state = state;
     }
 
-    public List<Datos> getDatos() {
-        return datos;
+
+    public Map<String, String> getLocalNames() {
+        return localNames;
     }
 
-    public void setDatos(List<Datos> datos) {
-        this.datos = datos;
+    public void setLocalNames(Map<String, String> localNames) {
+        this.localNames = localNames;
     }
+
+
+
+
+
 }

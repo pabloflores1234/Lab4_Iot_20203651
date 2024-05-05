@@ -35,7 +35,6 @@ android {
 dependencies {
 
     implementation libs.work.runtime
-
     implementation libs.lifecycle.viewmodel
     implementation libs.androidx.lifecycle.viewmodel.savedstate
     implementation libs.appcompat

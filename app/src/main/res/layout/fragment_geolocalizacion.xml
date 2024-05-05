@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#87CEEB"
-    tools:context=".geolocalizacionFragment">
+    tools:context="geolocalizacionFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,57 +15,54 @@
             android:id="@+id/Titulo"
             android:layout_width="match_parent"
             android:layout_height="53dp"
-            android:layout_marginBottom="28dp"
             android:gravity="center"
             android:text="Buscar Geolocalizacion"
             android:textColor="@color/white"
             android:textSize="22dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/buttonBuscar"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.02" />
 
         <EditText
             android:id="@+id/editTextCiudad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="31dp"
-            android:layout_marginEnd="39dp"
-            android:layout_marginBottom="700dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Ciudad"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/buttonBuscar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.118" />
 
         <Button
             android:id="@+id/buttonBuscar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="700dp"
             android:text="Buscar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.947"
+            app:layout_constraintHorizontal_bias="0.893"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Titulo" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.113" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/listCiudades"
-            android:layout_width="391dp"
-            android:layout_height="370dp"
+            android:layout_width="386dp"
+            android:layout_height="610dp"
             android:layout_marginStart="2dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginBottom="304dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonBuscar" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.726" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
